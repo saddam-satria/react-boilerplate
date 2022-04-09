@@ -1,0 +1,47 @@
+{
+    "name": "react-boilerplate",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "author": {
+        "name": "Saddam Satria"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --open",
+        "build": "webpack --mode production",
+        "lint": "eslint --fix src/**/*.js src/**/*.jsx",
+        "prettier": "prettier --write src/"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.9",
+        "@babel/plugin-transform-react-jsx": "^7.17.3",
+        "@babel/plugin-transform-runtime": "^7.17.0",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "@babel/preset-typescript": "^7.16.7",
+        "babel-loader": "^8.2.4",
+        "css-loader": "^6.7.1",
+        "csv-loader": "^3.0.3",
+        "eslint": "^8.13.0",
+        "eslint-plugin-react": "^7.29.4",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.6.0",
+        "node-sass": "^7.0.1",
+        "postcss-loader": "^6.2.1",
+        "prettier": "^2.6.2",
+        "sass-loader": "^12.6.0",
+        "style-loader": "^3.3.1",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.8.1",
+        "xml-loader": "^1.2.1"
+    },
+    "dependencies": {
+        "axios": "^0.26.1",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-router-dom": "^6.3.0"
+    }
+}
