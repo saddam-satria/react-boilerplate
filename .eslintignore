@@ -3,3 +3,4 @@ build
 .eslintrc.js
 tests
 webpack.config.js 
+webpack.prod.config.js 
