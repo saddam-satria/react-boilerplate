@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.prod.config.js",
     "lint:js": "eslint --fix src/**/*.js src/**/*.jsx",
     "lint:ts": "eslint src --ext .ts",
     "prettier": "prettier --write src/",
@@ -28,7 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
     "babel-loader": "^8.2.4",
-    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
     "csv-loader": "^3.0.3",
     "eslint": "^8.13.0",
