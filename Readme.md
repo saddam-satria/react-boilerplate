@@ -61,7 +61,7 @@ yarn run prettier
 <ul>
     <li>Support TS</li>
     <li>testing-libary react, jest</li>
-    <li>CSS module system</li>
+    <li style="text-decoration: line-through">CSS module system</li>
     <li>husky pre commit </li>
     <li>redux configuration</li>
     <li>firebase configuration</li>
