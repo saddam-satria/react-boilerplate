@@ -35,7 +35,7 @@ yarn run build
 <h2 style="color: red; font-weight: 700;">
     TIPS
 <h2>
-<ul style="font-size: 16px;">
+<ul style="font-size: 14px;">
     <li>in the production mode, every files in public folder will copy to the build folder</li>
     <li>In the webpack dev server,I preffered use live reload instead of hot reload. If you want configure hot reload, change in webpack.config.js</li>
     <li>All static file serve with the root file, which is /. file locate in the public folder</li>
