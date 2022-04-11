@@ -1,11 +1,16 @@
-const path = require('path');
+const { resolvePath, HOST } = require('./constant');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+
+process.env.NODE_ENV = 'development';
+
 const rules = [
   {
     test: /\.(css|scss)$/i,
     use: [
       'style-loader',
-      'css-loader',
+      {
+        loader: 'css-loader',
+      },
       'sass-loader',
 
       { loader: 'postcss-loader' },
@@ -44,12 +49,13 @@ const rules = [
 
 module.exports = {
   target: 'web',
-  entry: './src/index.js',
+  entry: {
+    app: resolvePath('src/index.js'),
+  },
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: '[contenthash].bundle.js',
-    publicPath: 'auto',
+    filename: 'main.[contenthash:8].js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.jsx', '.js', '.ts', '.tsx'],
@@ -68,12 +74,14 @@ module.exports = {
     },
     hot: false,
     historyApiFallback: true,
+    host: HOST,
+    static: resolvePath('public'),
   },
   plugins: [
     new htmlWebpackPlugin({
-      filename: 'index.html',
+      inject: true,
       title: 'react boilerplate',
-      template: './public/index.html',
+      template: resolvePath('public/index.html'),
     }),
   ],
   module: { rules },
