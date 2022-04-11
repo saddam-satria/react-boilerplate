@@ -4,7 +4,7 @@ function Homepage() {
   return (
     <div className="container">
       <div className="flex">
-        <img alt="" src="images/react-icon.png" className="react-logo" />
+        <img alt="" src="react-icon.png" className="react-logo" />
         <div style={{ padding: '10px 0px' }} className="flex">
           <span
             style={{
