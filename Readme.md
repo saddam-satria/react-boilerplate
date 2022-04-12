@@ -60,7 +60,6 @@ yarn run prettier
 <h3>Ongoing features</h3>
 <ul>
     <li>Support TS</li>
-    <li>husky pre commit </li>
     <li>redux configuration</li>
     <li>firebase configuration</li>
 </ul>
