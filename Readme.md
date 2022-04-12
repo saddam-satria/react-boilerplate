@@ -57,10 +57,20 @@ yarn run prettier
 
 > prettier will clean up your code lines
 
-<h3>Ongoing features</h3>
+<h3>latest features</h3>
+<ul>
+    <li>Eslint</li>
+    <li>React 18</li>
+    <li>Redux</li>
+    <li>Testing library</li>
+    <li>Husky pre commit</li>
+    <li>Prettier</li>
+    <li>Support SASS</li>
+</ul>
+
+<h3>ongoing features</h3>
 <ul>
     <li>Support TS</li>
-    <li>redux configuration</li>
     <li>firebase configuration</li>
 </ul>
 
