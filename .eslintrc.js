@@ -62,6 +62,8 @@ module.exports = {
     'jsx-quotes': ['warn', 'prefer-double'],
     'object-curly-spacing': ['warn', 'always'],
     'import/prefer-default-export': 'off',
+    'no-underscore-dangle': 'off',
+    'arrow-body-style': ['warn', 'always'],
   },
   settings: {
     react: {
