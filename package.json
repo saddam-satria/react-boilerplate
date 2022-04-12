@@ -13,8 +13,9 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --config webpack.prod.config.js",
-    "lint:js": "eslint --fix src/**/*.js src/**/*.jsx",
+    "lint:js": "eslint --ext .js",
     "lint:ts": "eslint src --ext .ts",
+    "lint": "eslint --fix src",
     "prettier": "prettier --write src/",
     "test": "jest"
   },
