@@ -10,6 +10,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
+    'plugin:testing-library/dom',
+    'plugin:testing-library/react',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -20,7 +22,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', 'testing-library', '@typescript-eslint'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -32,10 +34,14 @@ module.exports = {
     'react/jsx-no-target-blank': 'warn',
     'react/jsx-uses-vars': 'warn',
     'react/jsx-curly-brace-presence': 'off',
+    'testing-library/await-async-query': 'error',
+    'testing-library/no-await-sync-query': 'error',
+    'testing-library/no-debugging-utils': 'warn',
+    'testing-library/no-dom-import': 'off',
+    'comma-dangle': ['off', 'never'],
     'no-console': 'off',
     'no-duplicate-imports': 'warn',
     'no-unused-vars': 'warn',
-    'comma-dangle': ['off', 'never'],
     'import/order': [
       'warn',
       {
