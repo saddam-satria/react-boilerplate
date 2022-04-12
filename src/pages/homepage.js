@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Homepage() {
+  const [counter, setCounter] = useState(0);
+
+  const plus = () => {
+    setCounter(counter + 1);
+  };
+
   return (
     <div className="container">
       <div className="flex">
@@ -24,6 +30,23 @@ function Homepage() {
           >
             Created by <span style={{ fontWeight: 700 }}>Saddam</span>
           </span>
+          <span style={{ color: 'white', fontSize: '32px' }}>{counter}</span>
+          <div
+            style={{
+              position: 'absolute',
+              right: 0,
+              bottom: 0,
+              padding: '35px',
+            }}
+          >
+            <button
+              type="submit"
+              onClick={plus}
+              style={{ padding: '15px ', cursor: 'pointer' }}
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
     </div>
