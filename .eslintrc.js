@@ -64,6 +64,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-underscore-dangle': 'off',
     'arrow-body-style': ['warn', 'always'],
+    'default-param-last': 'off',
   },
   settings: {
     react: {
