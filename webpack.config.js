@@ -17,7 +17,7 @@ const rules = [
     ],
   },
   {
-    test: /\.(jsx|js|ts|tsx)$/i,
+    test: /\.(jsx|js)$/i,
     exclude: /node_modules/,
     use: {
       loader: 'babel-loader',
@@ -58,7 +58,7 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    extensions: ['.jsx', '.js', '.ts', '.tsx'],
+    extensions: ['.jsx', '.js'],
   },
   devtool: 'source-map',
   devServer: {

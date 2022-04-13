@@ -3,7 +3,6 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  parser: '@typescript-eslint/parser',
   extends: [
     'airbnb',
     'eslint:recommended',
@@ -12,8 +11,6 @@ module.exports = {
     'prettier',
     'plugin:testing-library/dom',
     'plugin:testing-library/react',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -22,7 +19,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', 'testing-library', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', 'testing-library'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',

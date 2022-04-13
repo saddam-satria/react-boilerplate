@@ -5,3 +5,4 @@ webpack.config.js
 webpack.prod.config.js 
 constant.js
 test
+cover.PNG
