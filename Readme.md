@@ -6,7 +6,7 @@
 
 <p style="font-size: 18px; padding: 20px 0px">this is a small starter kit pack react with webpack,babel loader,css loader,sass loader, eslint. I made this starter kit when I realized that create-react-app slow loadded in my computer. Hope this is can help you for build your front end stuff.<p>
 
-<img src="cover.png" />
+<img src="cover.PNG" />
 
 ## - First Configuration
 
