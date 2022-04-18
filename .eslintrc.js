@@ -30,6 +30,7 @@ module.exports = {
     'react/jsx-key': 'warn',
     'react/jsx-no-target-blank': 'warn',
     'react/jsx-uses-vars': 'warn',
+    'react/function-component-definition': 'off',
     'react/jsx-curly-brace-presence': 'off',
     'testing-library/await-async-query': 'error',
     'testing-library/no-await-sync-query': 'error',
