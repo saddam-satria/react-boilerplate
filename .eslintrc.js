@@ -32,6 +32,7 @@ module.exports = {
     'react/jsx-uses-vars': 'warn',
     'react/function-component-definition': 'off',
     'react/jsx-curly-brace-presence': 'off',
+    'react/no-array-index-key': 'off',
     'testing-library/await-async-query': 'error',
     'testing-library/no-await-sync-query': 'error',
     'testing-library/no-debugging-utils': 'warn',
