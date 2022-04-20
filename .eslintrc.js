@@ -38,6 +38,7 @@ module.exports = {
     'testing-library/no-debugging-utils': 'warn',
     'testing-library/no-dom-import': 'off',
     'comma-dangle': ['off', 'never'],
+    'arrow-body-style': 'off',
     'no-console': 'off',
     'no-duplicate-imports': 'warn',
     'no-unused-vars': 'warn',
