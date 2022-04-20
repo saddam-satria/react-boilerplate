@@ -38,6 +38,8 @@ module.exports = {
     'testing-library/no-debugging-utils': 'warn',
     'testing-library/no-dom-import': 'off',
     'comma-dangle': ['off', 'never'],
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'arrow-body-style': 'off',
     'no-console': 'off',
     'no-duplicate-imports': 'warn',
