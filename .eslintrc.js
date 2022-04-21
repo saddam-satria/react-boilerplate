@@ -35,6 +35,7 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'react/prop-types': 'off',
     'react/destructuring-assignment': 'off',
+    'react/button-has-type': 'off',
     'testing-library/await-async-query': 'error',
     'testing-library/no-await-sync-query': 'error',
     'testing-library/no-debugging-utils': 'warn',
