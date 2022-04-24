@@ -1,6 +1,6 @@
 {
   "presets": [
-    ["@babel/env", { "targets": "defaults", "corejs": 3 }],
+    ["@babel/env", { "targets": "defaults", "useBuiltIns": false }],
     "@babel/react"
   ],
   "plugins": [
