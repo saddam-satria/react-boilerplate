@@ -1,11 +1,21 @@
-const { resolvePath, HOST } = require('./constant');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const { resolvePath, HOST } = require('./constant');
 
 process.env.NODE_ENV = 'development';
 
 const rules = [
   {
-    test: /\.(css|scss)$/i,
+    test: /\.(css)$/i,
+    use: [
+      'style-loader',
+      {
+        loader: 'css-loader',
+      },
+      { loader: 'postcss-loader' },
+    ],
+  },
+  {
+    test: /\.(scss)$/i,
     use: [
       'style-loader',
       {
@@ -72,7 +82,7 @@ module.exports = {
     client: {
       logging: 'log',
     },
-    hot: false,
+    hot: true,
     historyApiFallback: true,
     host: HOST,
     static: resolvePath('public'),

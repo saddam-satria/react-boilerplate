@@ -21,6 +21,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks', 'testing-library'],
   rules: {
+    'arrow-body-style': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/no-deprecated': 'warn',
@@ -35,6 +36,7 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'react/prop-types': 'off',
     'react/destructuring-assignment': 'off',
+    'react/self-closing-comp': 'off',
     'react/button-has-type': 'off',
     'testing-library/await-async-query': 'error',
     'testing-library/no-await-sync-query': 'error',
@@ -43,7 +45,7 @@ module.exports = {
     'comma-dangle': ['off', 'never'],
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
-    'arrow-body-style': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
     'no-console': 'off',
     'no-duplicate-imports': 'warn',
     'no-unused-vars': 'warn',
@@ -68,7 +70,6 @@ module.exports = {
     'object-curly-spacing': ['warn', 'always'],
     'import/prefer-default-export': 'off',
     'no-underscore-dangle': 'off',
-    'arrow-body-style': ['warn', 'always'],
     'default-param-last': 'off',
   },
   settings: {
