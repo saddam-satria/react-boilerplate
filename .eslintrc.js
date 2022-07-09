@@ -46,6 +46,7 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
     'no-console': 'off',
     'no-duplicate-imports': 'warn',
     'no-unused-vars': 'warn',
@@ -71,6 +72,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-underscore-dangle': 'off',
     'default-param-last': 'off',
+    radix: 'off',
   },
   settings: {
     react: {
