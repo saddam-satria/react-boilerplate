@@ -1,7 +1,8 @@
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const { resolvePath, HOST } = require('./constant');
+const webpack = require('webpack');
 
-process.env.NODE_ENV = 'development';
+require('dotenv').config({ path: './.env' });
 
 const rules = [
   {
@@ -92,6 +93,9 @@ module.exports = {
       inject: true,
       title: 'react boilerplate',
       template: resolvePath('public/index.html'),
+    }),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env),
     }),
   ],
   module: { rules },

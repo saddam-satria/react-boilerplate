@@ -1,10 +1,9 @@
 const { resolvePath } = require('./constant');
-
+const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-
-process.env.NODE_ENV = 'production';
+require('dotenv').config({ path: './.env' });
 
 const rules = [
   {
@@ -78,7 +77,7 @@ module.exports = {
     publicPath: '/',
   },
   resolve: {
-    extensions: ['.jsx', '.js',],
+    extensions: ['.jsx', '.js'],
   },
   devtool: 'source-map',
   plugins: [
@@ -91,6 +90,9 @@ module.exports = {
     new MiniCSSExtractPlugin({
       filename: 'assets/css/main.[contenthash:8].css',
       chunkFilename: '[id].css',
+    }),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env),
     }),
     new CopyPlugin({
       patterns: [

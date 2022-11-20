@@ -1,1 +1,1 @@
-export const SERVER_URL = '';
+export const SERVER_URL = process.env.API_SERVER || '';
