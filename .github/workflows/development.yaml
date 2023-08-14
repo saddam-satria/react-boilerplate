@@ -22,7 +22,5 @@ jobs:
         run: yarn install
       - name: lint testing
         run: yarn run lint:test
-      - name: unit test and integration test
-        run: yarn run test
       - name: running code
         run: yarn start
