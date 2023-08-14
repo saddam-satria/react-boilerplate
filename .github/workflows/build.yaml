@@ -1,0 +1,29 @@
+name: 'React Build Code'
+
+on:
+  push:
+    branches:
+      - main
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set Up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: set up dependencies
+        run: yarn install
+      - name: lint testing
+        run: yarn run lint:test
+      - name: unit test and integration test
+        run: yarn run test
+      - name: build code
+        run: yarn run build
