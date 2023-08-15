@@ -28,7 +28,10 @@ function Homepage() {
               textTransform: 'lowercase',
             }}
           >
-            Created by <span style={{ fontWeight: 700 }}>Saddam</span>
+            Created by{' '}
+            <span style={{ fontWeight: 700 }} className="text-red-400">
+              Saddam
+            </span>
           </span>
           <span style={{ color: 'white', fontSize: '32px' }}>{counter}</span>
           <div

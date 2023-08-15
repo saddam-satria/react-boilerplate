@@ -1,9 +1,9 @@
 import React from 'react';
-import { Routing } from './routes';
+import Routes from './routes';
 import './App.css';
 
 function App() {
-  return <Routing />;
+  return <Routes />;
 }
 
 export default App;

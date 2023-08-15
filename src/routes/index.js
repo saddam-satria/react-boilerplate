@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from '../pages/homepage';
 
-export function Routing() {
+const routes = () => {
   return (
     <Router>
       <Routes>
@@ -10,4 +10,6 @@ export function Routing() {
       </Routes>
     </Router>
   );
-}
+};
+
+export default routes;
